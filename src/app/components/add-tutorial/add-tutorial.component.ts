@@ -18,21 +18,13 @@ export class AddTutorialComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  // saveTutorial() {
-    // const data = {
-    //   title: this.tutorial.title,
-    //   description: this.tutorial.description
-    // };
-
- 
-  // }
-
-  newTutorial() {
+  createTutorial() {
     const data = {
       title: this.tutorial.title,
       description: this.tutorial.description
     };
+    this.tutorial.title=""
+    this.tutorial.description=""
     this.tutorialService.create(data)
     .subscribe(
       response => {
@@ -49,5 +41,8 @@ export class AddTutorialComponent implements OnInit {
     //   description: '',
     //   published: false
    // };
+  }
+  newTutorial(){
+      this.submitted=false
   }
 }
