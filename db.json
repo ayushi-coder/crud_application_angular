@@ -3,7 +3,14 @@
     {
       "id": 1,
       "title": "json-server",
-      "author": "typicode"
+      "author": "typicode-sever"
+    }
+  ],
+  "tutorial": [
+    {
+      "title": "tutorial",
+      "description": "first data",
+      "id": 1
     }
   ],
   "comments": [
