@@ -40,6 +40,7 @@ export class TutorialsListComponent implements OnInit {
   setActiveTutorial(tutorials, index) {
     this.currentTutorial = tutorials;
     this.currentIndex = index;
+    
   }
 
   removeAllTutorials() {
