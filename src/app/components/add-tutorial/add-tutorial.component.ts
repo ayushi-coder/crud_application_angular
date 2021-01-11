@@ -35,12 +35,7 @@ export class AddTutorialComponent implements OnInit {
         console.log(error);
       });
     console.log(data)
-    // this.submitted = false;
-    // this.tutorial = {
-    //   title: '',
-    //   description: '',
-    //   published: false
-   // };
+
   }
   newTutorial(){
       this.submitted=false

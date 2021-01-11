@@ -37,8 +37,8 @@ export class TutorialsListComponent implements OnInit {
     this.currentIndex = -1;
   }
 
-  setActiveTutorial(tutorial, index) {
-    this.currentTutorial = tutorial;
+  setActiveTutorial(tutorials, index) {
+    this.currentTutorial = tutorials;
     this.currentIndex = index;
   }
 
@@ -64,5 +64,6 @@ export class TutorialsListComponent implements OnInit {
         error => {
           console.log(error);
         });
+
   }
 }
