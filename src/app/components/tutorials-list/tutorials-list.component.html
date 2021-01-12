@@ -13,7 +13,7 @@
     <h4>Tutorials List</h4>
     <ul class="list-group">
       <li class="list-group-item" *ngFor="let tutorial of tutorials; let i = index" [class.active]="i == currentIndex"
-        (click)="setActiveTutorial(tutorials, i)">
+        (click)="setActiveTutorial(tutorial,i,tutorial.id)">
         {{ tutorial.title }}
       </li>
     </ul>
@@ -26,10 +26,10 @@
     <div *ngIf="currentTutorial">
       <h4>Tutorial</h4>
       <div>
-        <label><strong>Title:{{currentTutorial[currentIndex].title}}</strong></label>
+        <label><strong>Title:{{currentTutorial.title}}</strong></label>
       </div>
       <div>
-        <label><strong>Description:{{currentTutorial[currentIndex].description}}</strong></label>
+        <label><strong>Description:{{currentTutorial.description}}</strong></label>
 
       </div>
       <div>
@@ -37,7 +37,7 @@
 
       </div>
 
-      <a class="badge badge-warning" href="/tutorial/{{ currentIndex+1 }}">
+      <a class="badge badge-warning" href="/tutorial/{{ currentid}}">
         Edit
       </a>
     </div>
